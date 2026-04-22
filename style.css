@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+ 
 body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
-
+ 
 .custom-bg {
-    background: linear-gradient(135deg, #1d1e25 0%, #605d63 100%);
+    background: #111111;
 }
-
+ 
 .project-card {
     transition: all 0.3s ease;
 }
-
+ 
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
-
+ 
 .skill-badge {
     transition: all 0.2s ease;
 }
-
+ 
 .skill-badge:hover {
     transform: scale(1.05);
 }
+ 
+
