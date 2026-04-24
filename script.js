@@ -1,21 +1,11 @@
-// Initialize AOS
-AOS.init({
-    duration: 800,
-    once: true
-});
+// script.js — Sean Aba portfolio
 
-// Mobile menu toggle
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
-
-// Close mobile menu when clicking a link
-const mobileLinks = mobileMenu.querySelectorAll('a');
-mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+// Staggered fade-in on load (CSS handles the animation,
+// this just ensures elements without inline delay still animate)
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.project-card');
+    cards.forEach((card, i) => {
+        card.style.animationDelay = `${0.16 + i * 0.07}s`;
+        card.classList.add('fade-in');
     });
 });
